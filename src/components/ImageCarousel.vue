@@ -27,11 +27,12 @@ const changeImage = (direction) => {
       {{ activities[currentImage] }}
     </h3>
 
-    <button class="absolute left-0 top-32 -translate-y-1/2" aria-label="Previous image" @click="changeImage(-1)">
+    <button class="absolute left-0 top-1/2 top-sm-32 -translate-y-1/2" aria-label="Previous image"
+      @click="changeImage(-1)">
       <ArrowLeftCircleIcon class="h-7 w-7 text-white hover:text-indigo-600" aria-hidden="true" />
     </button>
 
-    <button class="absolute right-0 top-32 -translate-y-1/2" aria-label="Next image" @click="changeImage(1)">
+    <button class="absolute right-0 top-1/2 top-sm-32 -translate-y-1/2" aria-label="Next image" @click="changeImage(1)">
       <ArrowRightCircleIcon class="h-7 w-7 text-white hover:text-indigo-600" aria-hidden="true" />
     </button>
   </div>
